@@ -4,8 +4,7 @@ import os
 import tensorflow as tf
 import functools
 
-####### STUDENTS FILL THIS OUT ######
-#Question 3
+
 def reduce_dimension_ndc(df, ndc_df):
     '''
     df: pandas dataframe, input dataset
@@ -17,7 +16,7 @@ def reduce_dimension_ndc(df, ndc_df):
     df['generic_drug_name'] = ndc_df['Non-proprietary Name']
     return df
 
-#Question 4
+
 def select_first_encounter(df):
     '''
     df: pandas dataframe, dataframe with all encounters
@@ -30,7 +29,7 @@ def select_first_encounter(df):
     return first_encounter_df
 
 
-#Question 6
+
 def patient_dataset_splitter(df, patient_key='patient_nbr'):
     '''
     df: pandas dataframe, input dataset that will be split
@@ -53,7 +52,7 @@ def patient_dataset_splitter(df, patient_key='patient_nbr'):
     test = val_test.drop (validation.index)
     return train, validation, test
 
-#Question 7
+
 
 def create_tf_categorical_feature_cols(categorical_col_list,
                               vocab_dir='./diabetes_vocab/'):
@@ -78,7 +77,7 @@ def create_tf_categorical_feature_cols(categorical_col_list,
         output_tf_list.append(tf_categorical_feature_column)
     return output_tf_list
 
-#Question 8
+
 def normalize_numeric_with_zscore(col, mean, std):
     '''
     This function can be used in conjunction with the tf feature column for normalization
@@ -102,7 +101,7 @@ def create_tf_numeric_feature(col, MEAN, STD, default_value=0):
     key=col, default_value = default_value, normalizer_fn=normalizer, dtype=tf.float64)
     return tf_numeric_feature
 
-#Question 9
+
 def get_mean_std_from_preds(diabetes_yhat):
     '''
     diabetes_yhat: TF Probability prediction object
@@ -111,7 +110,7 @@ def get_mean_std_from_preds(diabetes_yhat):
     s = diabetes_yhat.stddev()
     return m, s
 
-# Question 10
+
 def get_student_binary_prediction(df, col):
     '''
     df: pandas dataframe prediction output dataframe
