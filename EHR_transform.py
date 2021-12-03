@@ -8,7 +8,7 @@ from tensorflow.keras import layers
 import tensorflow_probability as tfp
 import matplotlib.pyplot as plt
 import pandas as pd
-import aequitas as ae
+import aequitas as ae     
 # Put all of the helper functions in utils
 from utils import build_vocab_files, show_group_stats_viz, aggregate_dataset, preprocess_df, df_to_dataset, posterior_mean_field, prior_trainable
 pd.set_option('display.max_columns', 500)
