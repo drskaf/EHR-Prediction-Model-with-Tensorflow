@@ -37,7 +37,7 @@ try:
     print("Dataset could be at the encounter level")
 except:
     print("Dataset is not at the encounter level")
-    
+       
 # Analyse dataset
 import tensorflow_data_validation as tfdv
 ######NOTE: The visualization will only display in Chrome browser. ########
