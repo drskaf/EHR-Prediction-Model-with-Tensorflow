@@ -114,7 +114,7 @@ print("Test passed for number of unique patients being equal!")
 
 # Demographic Representation Analysis of Split
 show_group_stats_viz(processed_df, PREDICTOR_FIELD)
-show_group_stats_viz(d_train, PREDICTOR_FIELD)
+show_group_stats_viz(d_train, PREDICTOR_FIELD)    
 show_group_stats_viz(d_test, PREDICTOR_FIELD)
 
 # Demographic Group Analysis
