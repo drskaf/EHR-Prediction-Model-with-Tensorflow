@@ -87,7 +87,7 @@ def normalize_numeric_with_zscore(col, mean, std):
 
 
 def create_tf_numeric_feature(col, MEAN, STD, default_value=0):
-    '''
+    '''    
     col: string, input numerical column name
     MEAN: the mean for the column in the training data
     STD: the standard deviation for the column in the training data
@@ -117,7 +117,7 @@ def get_student_binary_prediction(df, col):
     col: str,  probability mean prediction field
     return:
         student_binary_prediction: pandas dataframe converting input to flattened numpy array and binary labels
-    '''
+    '''   
     
     student_binary_prediction = df[col].apply(lambda x: 1 if x>=5 else 0 ).values
     print(f'### Transformed to numpy: {type(student_binary_prediction)}, shape: {student_binary_prediction.shape}')
