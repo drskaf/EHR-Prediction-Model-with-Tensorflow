@@ -17,7 +17,7 @@ def reduce_dimension_ndc(df, ndc_df):
     return df
 
 
-def select_first_encounter(df):
+def select_first_encounter(df):   
     '''
     df: pandas dataframe, dataframe with all encounters
     return:
