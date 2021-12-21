@@ -6,7 +6,7 @@ import functools
 
 
 def reduce_dimension_ndc(df, ndc_df):
-    '''
+    '''   
     df: pandas dataframe, input dataset
     ndc_df: pandas dataframe, drug code dataset used for mapping in generic names
     return:
