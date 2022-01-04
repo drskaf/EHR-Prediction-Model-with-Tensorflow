@@ -121,4 +121,4 @@ def get_student_binary_prediction(df, col):
     
     student_binary_prediction = df[col].apply(lambda x: 1 if x>=5 else 0 ).values
     print(f'### Transformed to numpy: {type(student_binary_prediction)}, shape: {student_binary_prediction.shape}')
-    return student_binary_prediction   
+    return student_binary_prediction  
