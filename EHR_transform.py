@@ -54,7 +54,7 @@ reduce_dim_df = reduce_dimension_ndc(df, ndc_code_df)
 # Number of unique values should be less for the new output field
 assert df['ndc_code'].nunique() > reduce_dim_df['generic_drug_name'].nunique()
 
-# Select First Encounter for each Patient
+# Select First Encounter for each Patient  
 from student_utils import select_first_encounter
 first_encounter_df = select_first_encounter(reduce_dim_df)
 
