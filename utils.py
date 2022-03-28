@@ -101,4 +101,4 @@ def create_tf_numerical_feature_cols(numerical_col_list, train_df):
         mean, std = calculate_stats_from_train_data(train_df, c)
         tf_numeric_feature = create_tf_numeric_feature(c, mean, std)
         tf_numeric_col_list.append(tf_numeric_feature)
-    return tf_numeric_col_list
+    return tf_numeric_col_list    
