@@ -108,7 +108,7 @@ def get_mean_std_from_preds(diabetes_yhat):
     '''
     m = diabetes_yhat.mean()
     s = diabetes_yhat.stddev()
-    return m, s
+    return m, s   
 
 
 def get_student_binary_prediction(df, col):
