@@ -105,8 +105,7 @@ processed_df = preprocess_df(selected_features_df, student_categorical_col_list,
 
 # Split Dataset into Train, Validation, and Test Partitions
 from student_utils import patient_dataset_splitter
-d_train, d_val, d_test = patient_dataset_spli
-tter(processed_df, 'patient_nbr')
+d_train, d_val, d_test = patient_dataset_splitter(processed_df, 'patient_nbr')
 assert len(d_train) + len(d_val) + len(d_test) == len(processed_df)
 print("Test passed for number of total rows equal!")
 assert (d_train['patient_nbr'].nunique() + d_val['patient_nbr'].nunique() + d_test['patient_nbr'].nunique()) == agg_drug_df['patient_nbr'].nunique()
