@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os   
 import tensorflow as tf
-import functools
+import functools  
 
 
 def reduce_dimension_ndc(df, ndc_df):
